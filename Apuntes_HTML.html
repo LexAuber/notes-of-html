@@ -14,6 +14,7 @@
     <header>
 <!--- Apuntes, es posible que se repitan etiquetas, o explicaciones-->
     <h1>Estructura HTML, apuntes generales en HTML</h1> 
+        <h3 class="actu">(Se actualizan cada dia en classe)</h3>
         <p>Indice de navegacion:</p>
       <nav>
         <ul>
@@ -238,7 +239,11 @@
 <!-------- Explicacion de tipografias-->
           <h2 id="TP">Tipografias:</h2>
           <p>Las serif, suelen ser la familias de tipografias mas predeterminadas. Serif sifnifica que la letra tiene "pie". Sans-serif es la letra sin el pie. El navegador usara la primera fuente de la lista especificada en "font-family" que tenga en el ordenador del usuario.</p>
-          <p>Se pueden poner tipografias de otros tipos, siempre respetando la autoria.</p>
+          <p>Para incorporar tipografias en CSS se utiliza "@font-face", seguido por el font family y src con url().</p>
+          <p>Hay diferentes plantillas de tipografias: OTF/TTF: Formatos originales de fuentes, con peso alto y licencias de pago. EOT: Original de IE, solo se usa en caso de compatibilidad con IE8 o inferior. SVG: Soportado por Safari e iOs, pesa poco e ideal para moviles pero esta en deshuso. Woff/Woff2: Son las mas modernas y usadas actualmente, pesan poco porque usan una version comprimida de OTF y TTF.</p>
+          <p>Se puede forzar un formato de tipografia para que funcione en todos los navegadores, dando un src para IE9 y el resto, src con la url, seguido por format y siguiente url. Asi hasta poner todos los navegadores. Existe una version ya hecha para dicha funcionalidad.</p>
+          <p>Para usar tipografias externas, se supone que estan libres de licencias. No descargamos nada pero añadimos un link para su utilizacion. Typekit y Google Fonts son ejemplos de sitios web gratuitos.</p>
+          <p>Existe un link en HTML y en CSS para poder cargar las fuentes.</p>
           <p><strong>Font-face</strong>: sirve para incorporar tipografias. Hay diferentes formatos para incoporar tipografias: TTF/OTF, WOFF(W3C), WOFF2, SVG, y EOT. En CSS se indica en font family: myFont, y luego especificar la url con src:url().</p>
           <p><strong>Font-size</strong> hay diferentes formas de definir la medida. Absoluta: xx-small, small, medium, large.... Relativa: larger, smaller,... o por medida: pixeles, pulgadas, o porcentaje que se adaptara siempre.</p>
           <p>Como consejo es mejor definir el elemento raix con una medida en px, y luego el resto de unidades relativas con rem, o em.</p>
